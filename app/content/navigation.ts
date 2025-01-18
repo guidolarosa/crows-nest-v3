@@ -1,5 +1,9 @@
 export const mainNavigation = [
   {
+    label: "Home",
+    path: "/",
+  },
+  {
     label: "Contacto",
     path: "/contact",
   },

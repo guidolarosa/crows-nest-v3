@@ -1,9 +1,13 @@
 import React from "react";
-import "./Aurora.css"; // Import the CSS file
+import "@/app/css/Aurora.css"; // Import the CSS file
+import clsx from "clsx";
 
-const AuroraEffect = () => {
+const AuroraEffect = ({ className } : { className: string }) => {
   return (
-    <article id="wrap" className="absolute w-screen h-screen">
+    <article
+      id="wrap"
+      className={clsx(className, "absolute w-screen h-screen")}
+    >
       <article id="lightings">
         <section id="one">
           <section id="two">

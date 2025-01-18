@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
@@ -31,22 +32,22 @@ const WorksSlider = ({
         },
       }}
     >
-      {category.map((item, idx) => {
+      {category.map((item : any, idx : number) => {
         const product = item.primary;
         const title = product.product_title[0].text;
         const year = product.product_year[0]?.text;
         const thumbnail = product.product_thumbnail.url;
         const vimeoId = product.product_vimeo_id[0].text;
-
         return (
           <SplideSlide
             key={idx}
             onClick={() => {
               setCurrentVimeoId(vimeoId);
             }}
+            className="group"
           >
             <div className="relative h-full flex flex-col gap-2">
-              <div className="relative aspect-video rounded-md overflow-hidden">
+              <div className="relative aspect-video rounded-md overflow-hidden transition-all group-hover:shadow-[0_30px_60px_-15px_rgba(255,255,255,0.3)] cursor-pointer">
                 <Image
                   src={thumbnail}
                   fill

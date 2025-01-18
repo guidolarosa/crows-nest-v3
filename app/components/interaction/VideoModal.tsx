@@ -8,7 +8,7 @@ const VideoModal = ({
 }: {
   open: boolean;
   currentVimeoId: string;
-  setCurrentVimeoId: (vimeoId?: string) => void;
+  setCurrentVimeoId: (vimeoId: string | null) => void;
 }) => {
   return (
     <div
@@ -20,7 +20,7 @@ const VideoModal = ({
       <div
         className="bg-[rgba(0,0,0,0.5)] backdrop-blur-md w-full h-full left-0 absolute z-10"
         onClick={() => {
-          setCurrentVimeoId();
+          setCurrentVimeoId(null);
         }}
       ></div>
       <div
