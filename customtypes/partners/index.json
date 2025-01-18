@@ -1,0 +1,77 @@
+{
+  "id": "partners",
+  "json": {
+    "Main": {
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+          "label": "título",
+          "placeholder": "Título de la sección"
+        }
+      },
+      "partners_info": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+          "label": "Información partners",
+          "placeholder": "Detalles e información para sección \"Partners\""
+        }
+      },
+      "partners_header_title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+          "label": "Encabezado lista instituciones",
+          "placeholder": "Título para la sección con logos de partners"
+        }
+      },
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "choices": {
+            "nueva_institucion": {
+              "type": "Slice",
+              "fieldset": "Nuevo Partner",
+              "description": "Añadir nuevo partner al listado",
+              "icon": "group",
+              "display": "list",
+              "non-repeat": {
+                "name": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                    "label": "Lugar",
+                    "placeholder": "Nombre del partner"
+                  }
+                },
+                "logo": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {},
+                    "thumbnails": [],
+                    "label": "Logo"
+                  }
+                },
+                "url": {
+                  "type": "Link",
+                  "config": {
+                    "label": "url",
+                    "placeholder": "Link al partner",
+                    "select": null
+                  }
+                }
+              },
+              "repeat": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "partners",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

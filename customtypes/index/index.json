@@ -1,0 +1,19 @@
+{
+  "id": "index",
+  "json": {
+    "Main": {
+      "imagen_del_hero": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "Imagen del hero"
+        }
+      }
+    }
+  },
+  "label": "index",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}
