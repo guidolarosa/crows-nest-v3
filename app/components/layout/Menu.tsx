@@ -22,9 +22,9 @@ const Menu = () => {
           </Link>
         </div>
         <div className="hidden lg:block">
-          <ul className="flex gap-12 bg-[rgba(0,0,0,0.5)] py-3 px-6 rounded-full backdrop-blur-md">
+          <ul className="flex gap-12 bg-[rgba(0,0,0,0.5)] py-3 px-3 rounded-lg backdrop-blur-md items-center pl-8">
             {mainNavigation.map((link) => (
-              <li key={link.path} className="text-stone-300">
+              <li key={link.path} className={clsx("text-stone-300", link.higlighted && 'bg-white py-2 px-4 text-stone-900 rounded-lg')}>
                 <a href={link.path}>{link.label}</a>
               </li>
             ))}
@@ -55,9 +55,9 @@ const Menu = () => {
           />
         </div>
         <nav className="p-6">
-          <ul className="flex flex-col gap-4">
+          <ul className="flex flex-col gap-4 items-end">
             {mainNavigation.map((link) => (
-              <li key={link.path} className="text-2xl">
+              <li key={link.path} className={clsx("text-2xl", link.higlighted && 'bg-stone-900 text-stone-100 w-fit px-4 py-2 rounded-lg mt-10')}>
                 <a href={link.path}>{link.label}</a>
               </li>
             ))}

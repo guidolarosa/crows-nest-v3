@@ -4,6 +4,7 @@ import WorksGallery from "./components/pages/WorksGallery";
 import { createClient } from "@/prismicio";
 import Hero from "./components/layout/Hero";
 import { JSX } from "react";
+import Footer from "./components/layout/Footer";
 
 // Define types for products and page data
 interface ProductItem {
@@ -44,9 +45,7 @@ export default async function Home(): Promise<JSX.Element> {
       <main className="flex flex-col gap-8 row-start-2 sm:items-start">
         <WorksGallery products={products} />
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center py-6 text-sm opacity-50 mt-6">
-        {new Date().getFullYear()} Crows Nest. Todos los derechos reservados.
-      </footer>
+      <Footer />
     </div>
   );
 }

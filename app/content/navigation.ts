@@ -4,10 +4,6 @@ export const mainNavigation = [
     path: "/",
   },
   {
-    label: "Contacto",
-    path: "/contact",
-  },
-  {
     label: "El Estudio",
     path: "/studio",
   },
@@ -16,11 +12,16 @@ export const mainNavigation = [
     path: "/learning",
   },
   {
+    label: "Servicios",
+    path: "/services",
+  },
+  {
     label: "Novedades",
     path: "/news",
   },
   {
-    label: "Servicios",
-    path: "/services",
+    label: "Contacto",
+    path: "/contact",
+    higlighted: true
   },
 ];
