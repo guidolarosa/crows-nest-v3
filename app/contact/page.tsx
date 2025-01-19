@@ -26,7 +26,7 @@ export default async function Contact() {
         )}
       >
         <h1 className={H1_STYLE}>Queremos conocerte</h1>
-        <div className="w-full aspect-video mb-4">
+        <div className="w-full aspect-video mb-4 rounded-lg overflow-hidden">
           <iframe
             style={{ border: 0 }}
             src={externalLinks.googleMaps}
