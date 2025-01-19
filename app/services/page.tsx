@@ -30,6 +30,9 @@ export default async function Home() {
           P_STYLE
         )}
       >
+        <div className="w-full aspect-video relative rounded-md overflow-hidden">
+          <Image src={'/images/services/detalle_sala_conformado.jpg'} fill alt="CN" className="object-cover" />
+        </div>
         <div>
           <div className="text-box">
             <h1 className={H1_STYLE}>Con un ojo siempre en el color</h1>

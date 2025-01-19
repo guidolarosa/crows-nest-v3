@@ -20,7 +20,7 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@splidejs/react-splide": ["./app/types/react-splide.d.ts"]
+      // "@splidejs/react-splide": ["./app/types/react-splide.d.ts"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "types"],

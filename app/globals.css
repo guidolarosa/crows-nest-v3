@@ -26,3 +26,8 @@ div[data-vimeo-initialized="true"] iframe
   width: 100%;
   height: 100%;
 }
+
+* {
+  scrollbar-color: theme('colors.stone.600') transparent;
+  scrollbar-hover: 
+}
