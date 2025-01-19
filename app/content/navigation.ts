@@ -4,10 +4,6 @@ export const mainNavigation = [
     path: "/",
   },
   {
-    label: "El Estudio",
-    path: "/studio",
-  },
-  {
     label: "Equipo",
     path: "/team",
   },
