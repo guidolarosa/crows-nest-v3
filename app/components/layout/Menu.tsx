@@ -24,7 +24,7 @@ const Menu = () => {
         <div className="hidden lg:block">
           <ul className="flex gap-12 bg-[rgba(0,0,0,0.5)] py-3 px-3 rounded-lg backdrop-blur-md items-center pl-8">
             {mainNavigation.map((link) => (
-              <li key={link.path} className={clsx("text-stone-300", link.higlighted && 'bg-white py-2 px-4 text-stone-900 rounded-lg')}>
+              <li key={link.path} className={clsx("text-stone-300 hover:text-stone-100 transition", link.higlighted && 'bg-white py-2 px-4 text-stone-900 border rounded-lg hover:text-stone-100 hover:border hover:bg-transparent')}>
                 <a href={link.path}>{link.label}</a>
               </li>
             ))}

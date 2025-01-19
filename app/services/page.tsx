@@ -1,25 +1,23 @@
 import Menu from "../components/layout/Menu";
-import { createClient } from "@/prismicio";
+// import { createClient } from "@/prismicio";
 import clsx from "clsx";
 
 import Image from "next/image";
 import Footer from "../components/layout/Footer";
+import {
+  P_STYLE,
+  H1_STYLE,
+  H2_STYLE,
+  IMAGE_CONTAINER,
+  IMAGE,
+  SINGLE_IMAGE_CONTAINER,
+} from "../styles/common";
 
 export default async function Home() {
-  const client = createClient();
-  const page = await client.getAllByType("servicios");
+  // const client = createClient();
+  // const page = await client.getAllByType("servicios");
 
-  console.log(page);
-
-  const H1_STYLE = "text-2xl font-bold mb-3";
-  const H2_STYLE = "text-lg font-bold mb-3";
-  const P_STYLE =
-    "[&_p]:text-stone-300 [&_strong]:font-semibold [&_strong]:text-stone-100 [&_p]:mb-3 lg:[&_p]:text-sm";
-  const IMAGE_CONTAINER =
-    "relative h-48 w-full rounded-md overflow-hidden lg:h-64";
-  const SINGLE_IMAGE_CONTAINER =
-    "relative h-48 w-full rounded-md overflow-hidden lg:!h-96";
-  const IMAGE = "object-cover";
+  // console.log(page);
 
   return (
     <div className="font-[family-name:var(--font-geist-sans)] w-full">

@@ -1,5 +1,5 @@
 import React from "react";
-import "@/app/css/Aurora.css"; // Import the CSS file
+import "@/app/styles/Aurora.css"; // Import the CSS file
 import clsx from "clsx";
 
 const AuroraEffect = ({ className } : { className: string }) => {
