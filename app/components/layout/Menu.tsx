@@ -15,7 +15,7 @@ const Menu = () => {
   console.log(pathname);
   return (
     <div className={clsx("fixed top-0 left-0 w-screen z-30")}>
-      <div className="p-4 lg:p-8 flex justify-between">
+      <div className="p-4 lg:p-6 flex justify-between">
         <div>
           <Link href="/" className="lg:hidden flex items-center gap-2">
             <div className="w-8 aspect-square relative">

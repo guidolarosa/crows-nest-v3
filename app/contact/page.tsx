@@ -1,8 +1,6 @@
 import Menu from "../components/layout/Menu";
-// import { createClient } from "@/prismicio";
 import clsx from "clsx";
 
-// import Image from "next/image";
 import Footer from "../components/layout/Footer";
 import {
   H1_STYLE,
@@ -15,7 +13,7 @@ import {
 } from "react-icons/ai";
 import { externalLinks } from "../content/externalLinks";
 
-export default async function Team() {
+export default async function Contact() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)] w-full">
       <header>

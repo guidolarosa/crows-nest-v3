@@ -8,6 +8,10 @@ export const mainNavigation = [
     path: "/studio",
   },
   {
+    label: "Equipo",
+    path: "/team",
+  },
+  {
     label: "Enseñanza",
     path: "/learning",
   },

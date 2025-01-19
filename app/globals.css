@@ -31,3 +31,16 @@ div[data-vimeo-initialized="true"] iframe
   scrollbar-color: theme('colors.stone.600') transparent;
   scrollbar-hover: 
 }
+
+.splide__arrow {
+  top: theme('spacing.20') !important;
+  background: rgba(0,0,0,0.3) !important;
+  border-radius: 4px !important;
+  opacity: 1 !important;
+  /* border: 1px solid theme('colors.stone.400') !important; */
+  backdrop-filter: blur(5px);
+}
+
+.splide__arrow svg  {
+  fill: theme('colors.stone.50') !important;
+}
