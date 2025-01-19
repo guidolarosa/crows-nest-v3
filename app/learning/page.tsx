@@ -76,7 +76,7 @@ export default async function Team() {
               <strong>en el país como en el exterior</strong>.
             </p>
           </div>
-          <div className="flex-col sm:flex-row flex gap-2">
+          <div className="flex-col sm:flex-row flex gap-2 sm:gap-4 mt-8">
             <div className={IMAGE_CONTAINER}>
               <Image fill alt="CN" src="/images/UDLA.jpg" className={IMAGE} />
             </div>

@@ -25,7 +25,7 @@ export default async function Team() {
       </header>
       <main
         className={clsx(
-          "flex flex-col gap-8 row-start-2 sm:items-start mt-20 px-6 lg:max-w-5xl mx-auto lg:mt-40",
+          "flex flex-col gap-8 row-start-2 sm:items-start mt-20 px-6 lg:max-w-7xl mx-auto lg:mt-40",
           P_STYLE
         )}
       >

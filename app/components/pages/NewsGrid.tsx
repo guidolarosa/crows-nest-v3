@@ -9,7 +9,7 @@ import { FiExternalLink } from "react-icons/fi";
 
 const NewsGrid = ({ news }: { news: any }) => {
   return (
-    <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
+    <ul className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-4">
       {news.map(({ primary, id }: { primary: any; id: string }) => {
         const heading = primary.article_header[0].text;
         const excerpt = primary.article_excerpt[0].text;
@@ -19,7 +19,7 @@ const NewsGrid = ({ news }: { news: any }) => {
         return (
           <li
             key={id}
-            className="flex flex-col gap-3 border-stone-800 border p-4 rounded-lg md:opacity-80 hover:opacity-100 transition"
+            className="flex flex-col gap-3 border-stone-800 border p-3 rounded-lg md:opacity-80 hover:opacity-100 transition"
           >
             <Link href={url} className="flex flex-col gap-2 grow" target="_blank">
               <div className="relative aspect-video w-full rounded-md overflow-hidden border border-stone-800">
