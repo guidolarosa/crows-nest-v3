@@ -11,7 +11,6 @@ const WorksSlider = ({
   category: any;
   setCurrentVimeoId: any;
 }) => {
-  console.log(category);
   return (
     <Splide
       options={{

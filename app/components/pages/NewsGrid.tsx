@@ -8,7 +8,6 @@ import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
 
 const NewsGrid = ({ news }: { news: any }) => {
-  console.log(news);
   return (
     <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
       {news.map(({ primary, id }: { primary: any; id: string }) => {
@@ -22,7 +21,7 @@ const NewsGrid = ({ news }: { news: any }) => {
             key={id}
             className="flex flex-col gap-3 border-stone-800 border p-4 rounded-lg md:opacity-80 hover:opacity-100 transition"
           >
-            <Link href={url} className="flex flex-col gap-2" target="_blank">
+            <Link href={url} className="flex flex-col gap-2 grow" target="_blank">
               <div className="relative aspect-video w-full rounded-md overflow-hidden border border-stone-800">
                 <Image
                   src={imageUrl}
