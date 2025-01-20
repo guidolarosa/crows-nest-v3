@@ -35,7 +35,7 @@ const Menu = () => {
                   link.higlighted &&
                     "bg-white py-1.5 px-3 text-stone-900 border rounded hover:text-stone-100 hover:border hover:bg-transparent",
                   pathname === link.path && "text-stone-50 font-medium",
-                  pathname === link.path && link.higlighted && "!text-stone-900"
+                  pathname === link.path && link.higlighted && "!text-stone-900 hover:!text-stone-200"
                 )}
               >
                 <a href={link.path}>{link.label}</a>
