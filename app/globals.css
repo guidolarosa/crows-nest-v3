@@ -33,7 +33,7 @@ div[data-vimeo-initialized="true"] iframe
 }
 
 .splide__arrow {
-  top: theme('spacing.20') !important;
+  top: calc(50% - 2rem) !important;
   background: rgba(0,0,0,0.3) !important;
   border-radius: 4px !important;
   opacity: 1 !important;

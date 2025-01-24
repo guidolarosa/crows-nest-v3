@@ -12,16 +12,18 @@ import {
   AiFillFacebook,
 } from "react-icons/ai";
 import { externalLinks } from "../content/externalLinks";
+import AuroraEffect from "../components/layout/AuroraEffect";
 
 export default async function Contact() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)] w-full">
-      <header>
+      <header className="relative-z-10">
         <Menu />
+        <AuroraEffect className="z-10 pointer-events-none"/>
       </header>
       <main
         className={clsx(
-          "flex flex-col row-start-2 sm:items-start mt-20 px-6 lg:max-w-4xl mx-auto lg:mt-40",
+          "flex flex-col row-start-2 sm:items-start mt-20 px-6 lg:max-w-4xl mx-auto lg:mt-40 z-20 relative",
           P_STYLE
         )}
       >

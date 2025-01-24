@@ -10,12 +10,12 @@ const Hero = () => {
         <Image fill src="/images/services/sala_proyeccion.jpg" alt="CN" className="opacity-50 z-0"></Image>
       </div> */}
       <div className="flex flex-col items-center gap-4 grow justify-center relative w-screen z-20">
-        <div className="w-16 aspect-square relative">
-          <Image src="/images/logo.svg" fill alt="Logo" />
+        <div className="h-40 lg:h-52 aspect-video relative">
+          <Image src="/images/logo-big.svg" fill alt="Logo"  className="object-bottom"/>
         </div>
         <div className="flex justify-center items-center flex-col gap-1">
-          <h1 className="text-4xl font-extrabold">CROWS NEST</h1>
-          <strong className="font-light opacity-50">
+          <h1 className="text-4xl font-black">CROWS NEST</h1>
+          <strong className="font-normal opacity-50">
             Professional Color Grading
           </strong>
         </div>
