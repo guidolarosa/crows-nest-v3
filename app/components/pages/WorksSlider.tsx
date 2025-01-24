@@ -1,8 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import Image from "next/image";
+import { Splide } from "@splidejs/react-splide";
 import WorkSlide from "./WorkSlide";
 
 const WorksSlider = ({
