@@ -76,6 +76,7 @@ export default async function Team() {
           <div className="flex gap-6 py-10">
             <div className="relative min-w-40 h-40 aspect-square rounded-full overflow-hidden">
               <Image
+                priority
                 src="/images/laura.jpg"
                 fill
                 alt="Laura Viviani"

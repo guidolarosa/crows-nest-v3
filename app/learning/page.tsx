@@ -78,10 +78,10 @@ export default async function Team() {
           </div>
           <div className="flex-col sm:flex-row flex gap-2 sm:gap-4 mt-8">
             <div className={IMAGE_CONTAINER}>
-              <Image fill alt="CN" src="/images/UDLA.jpg" className={IMAGE} />
+              <Image priority fill alt="CN" src="/images/UDLA.jpg" className={IMAGE} />
             </div>
             <div className={IMAGE_CONTAINER}>
-              <Image fill alt="CN" src="/images/UDLA2.jpg" className={IMAGE} />
+              <Image priority fill alt="CN" src="/images/UDLA2.jpg" className={IMAGE} />
             </div>
           </div>
         </section>

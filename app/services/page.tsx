@@ -31,7 +31,7 @@ export default async function Home() {
         )}
       >
         <div className="w-full aspect-video relative rounded-md overflow-hidden">
-          <Image src={'/images/services/detalle_sala_conformado.jpg'} fill alt="CN" className="object-cover" />
+          <Image priority src={'/images/services/detalle_sala_conformado.jpg'} fill alt="CN" className="object-cover" />
         </div>
         <div>
           <div className="text-box">
